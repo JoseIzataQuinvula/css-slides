@@ -2,16 +2,32 @@
 <html lang="pt-ao">
 
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5M65Y4108Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-5M65Y4108Y');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="recursos/img/favicon-pato.png">
-    <title>SLIDESHOW com HTML e CSS | José Izata Quinvula</title>
+    <link rel="shortcut icon" href="favicon-pato.ico" type="image/x-icon">
+    
+    <title>CSS Slideshow | DuckHub Interactive Display</title>
 
-    <meta name="description"
-        content="Demonstração de Slideshow interativo (sem JavaScript), utilizando apenas HTML e CSS. Projeto de Portefólio de José Izata Quinvula (DuckHub).">
+    <meta name="description" content="Demonstração de Slideshow interativo (sem JavaScript), utilizando apenas HTML5 e CSS3. Projeto desenvolvido por José Izata Quinvula para o DuckHub.">
+    <meta name="keywords" content="Slideshow CSS, No-JS Slider, José Izata, DuckHub, Frontend Angola, Web Design">
+    <meta name="author" content="José Izata Quinvula">
 
-    <link rel="stylesheet" href="recursos/css/style.css">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CSS Slideshow | José Izata">
+    <meta property="og:description" content="Slider interativo 100% feito em CSS puro. Sem dependências.">
+    <meta property="og:image" content="assets/imgs/slide-01.jpg">
+    <meta property="og:url" content="https://github.com/JoseIzataQuinvula/css-slides">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
 
 <body>
@@ -22,22 +38,24 @@
             <input type="radio" name="slide" id="slide3">
             <input type="radio" name="slide" id="slide4">
             <input type="radio" name="slide" id="slide5">
+
             <div class="slide s1">
-                <img src="recursos/img/img1.png" alt="Primeira imagem do slideshow">
+                <img src="assets/imgs/slide-01.jpg" alt="Interface de Desenvolvimento - DuckHub">
             </div>
             <div class="slide">
-                <img src="recursos/img/img2.png" alt="Segunda imagem do slideshow">
+                <img src="assets/imgs/slide-02.jpg" alt="Tecnologias Frontend - CSS3">
             </div>
             <div class="slide">
-                <img src="recursos/img/img3.png" alt="Terceira imagem do slideshow">
+                <img src="assets/imgs/slide-03.jpg" alt="Design Responsivo e Modular">
             </div>
             <div class="slide">
-                <img src="recursos/img/img4.png" alt="Quarta imagem do slideshow">
+                <img src="assets/imgs/slide-04.jpg" alt="Performance e Otimização">
             </div>
             <div class="slide">
-                <img src="recursos/img/img5.png" alt="Quinta imagem do slideshow">
+                <img src="assets/imgs/slide-05.jpg" alt="Conclusão e Contatos">
             </div>
         </div>
+
         <div class="navigation">
             <label class="bar" for="slide1"></label>
             <label class="bar" for="slide2"></label>
@@ -47,6 +65,4 @@
         </div>
     </div>
 </body>
-
-
 </html>
