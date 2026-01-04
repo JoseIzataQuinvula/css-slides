@@ -1,52 +1,56 @@
-# 🖼️ Slideshow Interativo (HTML & CSS Puros)
+# CSS Slideshow - DuckHub Interactive Display
 
-Este projeto apresenta um componente de carrossel ou **slideshow** totalmente funcional utilizando apenas **HTML e CSS**.
+Este repositório contém o código-fonte de um Slideshow interativo desenvolvido exclusivamente com HTML5 e CSS3. O projeto foi estruturado para demonstrar o potencial de seletores avançados e lógica de estado sem a necessidade de scripts externos ou JavaScript.
 
-O objetivo é demonstrar o uso da pseudo-classe `:checked` aplicada em botões de rádio (`<input type="radio">`) para criar transições elegantes, sem recurso a JavaScript.
+## Visão Geral
 
-## ✨ Funcionalidades
-
-* **Navegação Sem JavaScript:** Alternância dos slides feita apenas com CSS.
-* **Transições Suaves:** Deslizamento horizontal entre as imagens.
-* **Indicadores Visuais:** Controlo na parte inferior para navegação rápida entre slides.
-* **Estrutura Intuitiva:** Código simples, claro e fácil de adaptar.
-
-## 🛠️ Tecnologias Utilizadas
-
-* **HTML5:** Estrutura dos slides e controlos (`<input type="radio">`, `<label>`).
-* **CSS3:** Estilos, posicionamento (Flexbox/absoluto) e lógica de transição com seletores de irmãos e `:checked`.
-
-## ⚙️ Como Utilizar
-
-1. **Descarregar ou Clonar** o projeto para o seu computador.
-2. **Estrutura de Pastas:** Confirme que segue a seguinte organização:
-
-   ```txt
-   .
-   ├── index.html
-   └── assets/
-       ├── css/
-       │   └── style.css
-       └── img/
-           ├── img1.png
-           ├── img2.png
-           └── ...
-   ```
-
-3. **Abrir** o ficheiro `index.html` no navegador.
-
-## 🚀 Melhorias Futuras
-
-* Adicionar botões de navegação "Anterior" e "Próximo".
-* Tornar o layout totalmente responsivo através de *media queries*.
-* (Opcional) Incluir rotação automática de slides com JavaScript.
-
-## 👤 Autor
-
-Desenvolvido por **José Izata Quinvula**.
+O Slideshow funciona através do controle de estados de inputs radio e seletores de irmãos adjacentes (~). A arquitetura foi planejada para garantir uma navegação fluida, focada em performance nativa e transições suaves, ideal para portfólios e exibições de ativos estáticos.
 
 ---
 
-## ⚖️ Licença
+## Arquitetura de Pastas
 
-Este projeto está disponível sob a licença **MIT**. Consulte o ficheiro `LICENSE` para mais informações.
+A organização do diretório segue o padrão de separação de responsabilidades do DuckHub:
+
+* **Raiz:** Ponto de entrada (`index.html`), metadados de SEO e rastreamento (GA).
+* **assets/css:** Lógica de estilização, transições e regras de responsividade.
+* **assets/imgs:** Armazenamento das imagens do slider (`slide-01.jpg` a `slide-05.jpg`).
+
+---
+
+## Especificações Técnicas
+
+O desenvolvimento priorizou o uso de recursos nativos do navegador para minimizar o tempo de carregamento (LCP):
+
+* **Estrutura:** HTML5 Semântico com lógica de controle via inputs.
+* **Estilização:** CSS3 puro, utilizando `flexbox` e `object-fit` para gestão de imagem.
+* **Interatividade:** Sistema de transição via `margin-left` e `cubic-bezier`.
+* **Rastreamento:** Google Analytics integrado para monitoramento de tráfego.
+
+---
+
+## Demonstração da Interface
+
+### Interface Desktop
+
+![Visualização Desktop](./assets/imgs/preview-desktop.png)
+
+### Interface Mobile
+
+![Visualização Mobile](./assets/imgs/preview-mobile.png)
+
+---
+
+## Procedimentos de Instalação
+
+Para replicar o ambiente de desenvolvimento localmente, siga os passos abaixo:
+
+1. Clone o repositório:
+
+```bash
+git clone [https://github.com/JoseIzataQuinvula/css-slides.git](https://github.com/JoseIzataQuinvula/css-slides.git)
+
+cd css-slides
+
+2. Execução: O projeto é estático e independente de dependências externas. Basta abrir o arquivo index.html em qualquer navegador moderno.
+
